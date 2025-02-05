@@ -1,0 +1,89 @@
+require:
+  - rubocop-minitest
+  - rubocop-packaging
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+
+AllCops:
+  TargetRailsVersion: 6.1
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  Exclude:
+    - .git/**/*
+    - gemfiles/**/*
+    - node_modules/**/*
+    - test/generators/tmp/**/*
+    - tmp/**/*
+    - vendor/**/*
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 21.91
+
+Metrics/BlockLength:
+  Exclude:
+    - '*.gemspec'
+    - 'Rakefile'
+    - 'test/**/*'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/MethodLength:
+  Max: 16
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ModuleLength:
+  Max: 109
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ParameterLists:
+  Max: 8
+  Exclude:
+    - 'test/**/*'
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'test/**/*'
+
+Minitest/MultipleAssertions:
+  Enabled: false
+
+Rails/ApplicationRecord:
+  Exclude:
+    - 'test/**/*'
+
+Rails/Pluck:
+  Enabled: false
+
+Rails/RakeEnvironment:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Exclude:
+    - 'test/**/*'
+
+Style/IfUnlessModifier:
+  Enabled: false

@@ -1,0 +1,70 @@
+{
+  "name": "@client-side-validations/client-side-validations",
+  "description": "Client Side Validations made easy for your Rails 6.1, 7.x, and 8.0 applications",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavyJonesLocker/client_side_validations.git"
+  },
+  "keywords": [
+    "rails",
+    "browser",
+    "client side validations"
+  ],
+  "author": "Geremia Taglialatela <tagliala.dev@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavyJonesLocker/client_side_validations/issues"
+  },
+  "homepage": "https://github.com/DavyJonesLocker/client_side_validations",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "test/javascript/run-qunit.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "chrome-launcher": "^1.1.2",
+    "eslint": "^9.19.0",
+    "eslint-plugin-compat": "^6.0.2",
+    "neostandard": "^0.12.0",
+    "puppeteer-core": "^24.1.1",
+    "rollup": "^4.32.1",
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "main": "dist/client-side-validations.js",
+  "module": "dist/client-side-validations.esm.js",
+  "engines": {
+    "node": ">= 18.12"
+  },
+  "packageManager": "pnpm@^9.12.1",
+  "browserslist": [
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "iOS >= 12",
+    "Safari >= 12"
+  ],
+  "files": [
+    "dist",
+    "src/**/*.js"
+  ],
+  "standard": {
+    "ignore": [
+      "/dist/",
+      "/gemfiles/",
+      "/test/",
+      "/vendor/"
+    ]
+  },
+  "version": "0.5.0",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
