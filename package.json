@@ -1,5 +1,5 @@
 {
-  "name": "@client-side-validations/client-side-validations",
+  "name": "client-side-validations",
   "description": "Client Side Validations made easy for your Rails 6.1, 7.x, and 8.0 applications",
   "repository": {
     "type": "git",
