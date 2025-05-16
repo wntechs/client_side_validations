@@ -16,5 +16,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Dependencies
+  spec.add_dependency 'js_regex'
   spec.add_dependency 'rails', '>= 6.0', '< 8.0'
 end
