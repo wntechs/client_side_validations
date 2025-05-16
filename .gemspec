@@ -1,0 +1,1 @@
+gem 'client_side_validations', git: 'https://github.com/wntechs/client_side_validations.git', branch: 'main'
